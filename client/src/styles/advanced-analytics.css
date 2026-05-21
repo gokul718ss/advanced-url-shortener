@@ -1,0 +1,402 @@
+/* ============================================
+   ADVANCED ANALYTICS STYLES
+   ============================================ */
+
+@import './design-system.css';
+
+.advanced-analytics {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  animation: fade-in 0.6s ease-out;
+}
+
+/* ============================================
+   ANALYTICS HEADER
+   ============================================ */
+
+.analytics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.analytics-title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.analytics-subtitle {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  margin: var(--space-1) 0 0 0;
+}
+
+.analytics-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.time-range-selector {
+  display: flex;
+  gap: var(--space-2);
+  background: var(--bg-tertiary);
+  padding: var(--space-1);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.range-btn {
+  padding: var(--space-2) var(--space-3);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.range-btn:hover {
+  color: var(--text-primary);
+}
+
+.range-btn.active {
+  background: var(--primary-500);
+  color: white;
+}
+
+.analytics-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.analytics-action-btn:hover {
+  background: var(--primary-500);
+  color: white;
+  border-color: var(--primary-500);
+}
+
+/* ============================================
+   CHART TYPE SELECTOR
+   ============================================ */
+
+.chart-type-selector {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: var(--space-4);
+}
+
+.chart-type-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chart-type-btn:hover {
+  color: var(--text-primary);
+}
+
+.chart-type-btn.active {
+  color: var(--primary-500);
+  border-bottom-color: var(--primary-500);
+}
+
+.chart-icon {
+  font-size: var(--fs-lg);
+}
+
+/* ============================================
+   CHARTS CONTAINER
+   ============================================ */
+
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.chart-subtitle {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  margin: 0;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ============================================
+   SECONDARY CHART
+   ============================================ */
+
+.secondary-chart {
+  margin-top: var(--space-6);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================
+   DEVICE STATS
+   ============================================ */
+
+.device-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.device-stat-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: all 0.2s ease;
+}
+
+.device-stat-card:hover {
+  background: var(--bg-secondary);
+  border-color: var(--primary-500);
+  transform: translateY(-2px);
+}
+
+.device-color {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+}
+
+.device-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.device-name {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.device-percentage {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* ============================================
+   GEO TABLE
+   ============================================ */
+
+.geo-table {
+  margin-top: var(--space-6);
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 60px;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  font-weight: var(--fw-semibold);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 60px;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:last-child {
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.table-row:hover {
+  background: var(--bg-tertiary);
+}
+
+.table-cell {
+  font-size: var(--fs-sm);
+  color: var(--text-primary);
+}
+
+.table-cell:last-child {
+  text-align: right;
+  color: var(--primary-500);
+  font-weight: var(--fw-semibold);
+}
+
+/* ============================================
+   RECHARTS CUSTOMIZATION
+   ============================================ */
+
+.recharts-wrapper {
+  margin: var(--space-4) 0;
+}
+
+.recharts-surface {
+  border-radius: var(--radius-lg);
+}
+
+.recharts-default-tooltip {
+  outline: none !important;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+.recharts-text {
+  fill: var(--text-secondary) !important;
+  font-family: var(--font-family-primary) !important;
+}
+
+.recharts-cartesian-axis {
+  font-size: var(--fs-xs) !important;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+  .advanced-analytics {
+    padding: var(--space-4);
+  }
+
+  .analytics-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .analytics-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .time-range-selector {
+    flex: 1;
+  }
+
+  .chart-type-selector {
+    gap: var(--space-2);
+    overflow-x: auto;
+  }
+
+  .chart-subtitle {
+    font-size: var(--fs-base);
+  }
+
+  .device-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr 80px;
+  }
+
+  .table-header > :nth-child(3),
+  .table-row > :nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .advanced-analytics {
+    padding: var(--space-3);
+  }
+
+  .analytics-title {
+    font-size: var(--fs-xl);
+  }
+
+  .chart-type-selector {
+    gap: var(--space-2);
+  }
+
+  .chart-type-btn {
+    padding: var(--space-2) var(--space-3);
+    gap: var(--space-1);
+  }
+
+  .chart-icon {
+    font-size: var(--fs-base);
+  }
+
+  .device-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-controls {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: var(--space-2);
+  }
+
+  .analytics-action-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
